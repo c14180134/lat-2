@@ -1,4 +1,18 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Start editing to see some magic happen :)
+  Title <input type="text" [(ngModel)]="judul"/>
+  
+  <br/>
+  Description
+  <br />
+  <br>
+  
+  
+  <textarea [placeholder]="'Add Description'" [(ngModel)]="isi"> </textarea>
+  <button (click)="savedata()">SAVE</button>
+  <br />
+
+  <button (click)="openlist()">Hal 2</button>
+  <button (click)="openfav()">Hal 3</button>
+  <router-outlet> </router-outlet>
 </p>
