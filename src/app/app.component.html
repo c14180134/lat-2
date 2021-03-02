@@ -1,15 +1,13 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Title <input type="text" [(ngModel)]="judul"/>
-  
-  <br/>
+  Title <input type="text" [(ngModel)]="judul" />
+
+  <br />
   Description
   <br />
-  <br>
-  
-  
+  <br />
   <textarea [placeholder]="'Add Description'" [(ngModel)]="isi"> </textarea>
-  <button (click)="savedata()">SAVE</button>
+  <button (click)="savedata(judul,isi)">SAVE</button>
   <br />
 
   <button (click)="openlist()">Hal 2</button>

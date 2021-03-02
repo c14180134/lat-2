@@ -8,10 +8,13 @@ import { GlobarnoteService } from "../globarnote.service";
 })
 export class Hal2Component implements OnInit {
   notes = [];
+  kambing;
   constructor(public globalnote: GlobarnoteService) {
     this.globalnote.getdatanote();
     this.notes = JSON.parse(localStorage.getItem("notes"));
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.kambing=localStorage.getItem("notes")
+  }
 }
